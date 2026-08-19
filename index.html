@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SintaxWear - E-commerce</title>
+  
+  <!-- CSS Base e Layout -->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  
+  <!-- Componentes CSS -->
+  <link rel="stylesheet" href="css/components/header.css">
+  <link rel="stylesheet" href="css/components/hero.css">
+  <link rel="stylesheet" href="css/components/panel.css">
+  <link rel="stylesheet" href="css/components/product-card.css">
+  <link rel="stylesheet" href="css/components/product-grid.css">
+  <link rel="stylesheet" href="css/components/newsletter.css">
+  <link rel="stylesheet" href="css/components/footer.css">
+</head>
+<body>
+
+  <!-- Top Bar / Painel de Avisos -->
+  <aside class="panel">
+    <div class="container">
+      <p>Frete grátis para todo o Brasil em compras acima de R$ 199,00!</p>
+    </div>
+  </aside>
+
+  <!-- Cabeçalho / Navegação -->
+  <header class="header">
+    <div class="container header__container">
+      <a href="index.html" class="header__logo">
+        <h2>SintaxWear</h2>
+      </a>
+      <nav class="header__nav">
+        <ul class="header__menu">
+          <li><a href="#lancamentos">Lançamentos</a></li>
+          <li><a href="#camisetas">Camisetas</a></li>
+          <li><a href="#moletons">Moletons</a></li>
+          <li><a href="#acessorios">Acessórios</a></li>
+        </ul>
+      </nav>
+      <div class="header__actions">
+        <button class="btn-icon" aria-label="Carrinho de Compras">🛒 (0)</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Conteúdo Principal -->
+  <main>
+    <!-- Seção Destaque (Hero) -->
+    <section class="hero">
+      <div class="container hero__content">
+        <h1>Vista o código. Vista o estilo.</h1>
+        <p>A loja definitiva de moda e estilo para desenvolvedores e tech lovers.</p>
+        <a href="#produtos" class="btn btn-primary">Ver Coleção</a>
+      </div>
+    </section>
+
+    <!-- Grade de Produtos -->
+    <section class="products-section container" id="produtos">
+      <h2 class="section-title">Destaques da Semana</h2>
+      <div class="product-grid">
+        <!-- Exemplo de Card de Produto -->
+        <article class="product-card">
+          <div class="product-card__image-wrapper">
+            <img src="https://via.placeholder.com/300x300?text=Camiseta+Dev" alt="Camiseta Clean Code" class="product-card__image">
+          </div>
+          <div class="product-card__info">
+            <span class="product-card__category">Camisetas</span>
+            <h3 class="product-card__title">Camiseta Clean Code</h3>
+            <p class="product-card__price">R$ 89,90</p>
+            <button class="btn btn-primary btn-block">Adicionar ao Carrinho</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Seção Newsletter -->
+    <section class="newsletter">
+      <div class="container newsletter__content">
+        <h2>Fique por dentro das novidades</h2>
+        <p>Receba cupons de desconto e lançamentos exclusivos diretamente no seu e-mail.</p>
+        <form class="newsletter__form">
+          <input type="email" placeholder="Digite seu melhor e-mail" required class="newsletter__input">
+          <button type="submit" class="btn btn-secondary">Cadastrar</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__about">
+        <h3>SintaxWear</h3>
+        <p>A melhor loja geek & dev do Brasil.</p>
+      </div>
+      <div class="footer__links">
+        <h4>Links Úteis</h4>
+        <ul>
+          <li><a href="#">Sobre Nós</a></li>
+          <li><a href="#">Trocas e Devoluções</a></li>
+          <li><a href="#">Política de Privacidade</a></li>
+        </ul>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 SintaxWear. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
