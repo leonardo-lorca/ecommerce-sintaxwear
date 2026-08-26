@@ -54,20 +54,20 @@
    position: absolute;
    left: 50%;
    top: 50%;
-   transform: translate(-50% -50%);
+   transform: translate(-50%, -50%);
    text-align: center;
 }
 
 .card-title{
    color: #ededed;
-   font-size: 1,25rem;
+   font-size: 1.25rem;
    font-weight: 400;
    margin-bottom: 10px;
 }
 
 .card-subtitle{
    color: #ededed;
-   font-size: 1,5rem;
+   font-size: 1.5rem;
    font-weight: 400;
    margin-bottom: 20px;
 }

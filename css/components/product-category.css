@@ -27,7 +27,7 @@
 
 .category-name {
     position: absolute;
-    bottom: 20px;
+    /*bottom: 20px; desnecessário*/ 
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
