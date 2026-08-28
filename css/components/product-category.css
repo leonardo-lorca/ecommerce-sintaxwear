@@ -1,6 +1,6 @@
 /* PRODUCT-CATEGORY.CSS*/
 
-.categories-section {
+/*.categories-section {
     background-color: #ffffff;
     padding-top: 40px;
     padding-bottom: 40px;
@@ -8,6 +8,22 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
+}*/
+
+.categories-section {
+    background-color: #ffffff;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-wrap: nowrap;       /* CORRIGIDO: Força os elementos a ficarem rigidamente na mesma linha */
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    max-width: 1360px;       /* Alinha com o limite máximo do seu rodapé e cabeçalho */
+    margin: 0 auto;          /* Centraliza a seção inteira na tela */
+    padding-left: 20px;      /* Pequena margem de segurança nas laterais */
+    padding-right: 20px;
+    box-sizing: border-box;
 }
 
 /*.category-card {
@@ -20,12 +36,13 @@
 
 .category-card {
     position: relative;
-    width: 100%;             /* CORRIGIDO: Permite que o card reduza se a tela for menor */
-    max-width: 317px;        /* CORRIGIDO: Garante que o card nunca passe do tamanho original */
+    /* CORRIGIDO: Divide 100% da linha por 4 e desconta os gaps de 30px proporcionais */
+    width: calc(25% - 22.5px); 
+    max-width: 317px;        /* Mantém o tamanho máximo original */
     height: 500px;
     border-radius: 15px;
     overflow: hidden;
-    flex-shrink: 1;          /* Garante que os cards possam encolher proporcionalmente */
+    flex-shrink: 0;          /* Impede que o card colapse de tamanho excessivamente */
 }
 
 .overlay {
