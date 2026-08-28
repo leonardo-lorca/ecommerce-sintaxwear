@@ -10,12 +10,22 @@
     gap: 30px;
 }
 
-.category-card {
+/*.category-card {
     position: relative;
     width: 317px;
     height: 500px;
     border-radius: 15px;
     overflow: hidden;
+}*/
+
+.category-card {
+    position: relative;
+    width: 100%;             /* CORRIGIDO: Permite que o card reduza se a tela for menor */
+    max-width: 317px;        /* CORRIGIDO: Garante que o card nunca passe do tamanho original */
+    height: 500px;
+    border-radius: 15px;
+    overflow: hidden;
+    flex-shrink: 1;          /* Garante que os cards possam encolher proporcionalmente */
 }
 
 .overlay {
