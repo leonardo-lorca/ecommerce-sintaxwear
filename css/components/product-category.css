@@ -27,7 +27,7 @@
 
 .category-name {
     position: absolute;
-    /*bottom: 20px; desnecessário*/ 
+    /*bottom: 20px; desnecessário*/
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -57,4 +57,10 @@
     background-image: url('../../images/products/futurista.jpg');
     background-size: cover;
     background-position: center;
+}
+
+@media (max-width:500px) {
+    .category-card {
+        width: 100%;
+    }
 }
