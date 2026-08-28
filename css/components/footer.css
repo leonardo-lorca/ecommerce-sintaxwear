@@ -57,8 +57,12 @@
 
 .newsletter-form input {
    border-radius: 30px;
-   color: #aaaaaa;
+   background-color: #ffffff; /* Garante o fundo branco */
+   color: #333333;            /* CORRIGIDO: Texto escuro para dar contraste legível */
    padding: 0.75rem 1.25rem;
+   border: none;              /* CORRIGIDO: Remove a borda preta padrão do navegador */
+   outline: none;             /* Opcional: Remove o contorno ao clicar */
+   width: 100%;               /* Garante que ocupe o espaço correto */
 }
 
 .footer-social span {
@@ -74,4 +78,12 @@
 .footer-social li a:hover img{
    opacity: 0.7;
 
+}
+
+/* Adicione esta regra para criar o espaçamento na linha divisória */
+.site-footer hr {
+   border: 0;
+   border-top: 1px solid #555555; /* Uma linha sutil */
+   margin: 2.5rem 0 1.5rem 0;     /* CORRIGIDO: Dá espaço acima e abaixo da linha */
+   width: 100%;
 }
