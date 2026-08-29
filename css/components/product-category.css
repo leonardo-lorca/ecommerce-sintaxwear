@@ -1,6 +1,6 @@
 /* PRODUCT-CATEGORY.CSS*/
 
-/*.categories-section {
+.categories-section {
     background-color: #ffffff;
     padding-top: 40px;
     padding-bottom: 40px;
@@ -8,42 +8,14 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
-}*/
-
-.categories-section {
-    background-color: #ffffff;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    gap: 30px;
-    width: calc(100% - 210px);
-    max-width: 1360px;
-    margin: 0 auto;
-    box-sizing: border-box;
-    /* ADICIONADO: Garante que o container nunca morda as bordas da tela */
-    padding-left: 20px;
-    padding-right: 20px; 
 }
 
-/*.category-card {
+.category-card {
     position: relative;
     width: 317px;
     height: 500px;
     border-radius: 15px;
     overflow: hidden;
-}*/
-
-.category-card {
-    position: relative;
-    /* CORRIGIDO: Deixamos o tamanho fluido para se adaptar à tela do deploy sem vazar */
-    width: calc(25% - 22.5px); 
-    height: 500px;
-    border-radius: 15px;
-    overflow: hidden;
-    /* ADICIONADO: Permite que o card diminua um pouquinho se a tela for menor que 1358px */
-    flex-shrink: 1; 
 }
 
 .overlay {
